@@ -12,8 +12,9 @@ body {
 
 /* Container for cards */
 .container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  display: flex;
+  flex-wrap: wrap;  /* This ensures the cards will wrap into multiple rows */
+  justify-content: center;
   gap: 20px;
   padding: 20px;
 }
@@ -95,7 +96,9 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr 1fr 1fr; /* Ensure 3 columns even on mobile */
+  /* Adjust grid for smaller screens */
+  .card {
+    width: 100%;
+    max-width: 300px;
   }
 }
