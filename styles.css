@@ -40,10 +40,10 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card:click {
+/*.card:click {
   transform: scale(10.1);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 /* Card content styling */
 .card-content {
@@ -53,7 +53,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: cubic-bezier(0, 0, .04, 1.01) 0.3s ease;
 }
 
 .card-content img {
