@@ -40,6 +40,11 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.card:click {
+  transform: scale(10.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Card content styling */
 .card-content {
   padding: 15px;
