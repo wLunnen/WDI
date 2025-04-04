@@ -1,5 +1,3 @@
-/* try this for animations using pure css https://www.youtube.com/shorts/ecl-eCbYFPM */
-
 /* Global styles */
 body {
   font-family: Arial, sans-serif;
@@ -42,11 +40,6 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-/*.card:click {
-  transform: scale(10.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}*/
-
 /* Card content styling */
 .card-content {
   padding: 15px;
@@ -55,7 +48,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: /*cubic-bezier(0, 0, .04, 1.01)*/ all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-content img {
@@ -108,4 +101,3 @@ footer a:hover {
     width: 100%;
     max-width: 300px;
   }
-}
