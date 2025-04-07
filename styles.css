@@ -101,3 +101,9 @@ footer a:hover {
     width: 100%;
     max-width: 300px;
   }
+
+#favicon {
+  width: 32px; 
+  height: 32px; 
+  border: none;
+}
