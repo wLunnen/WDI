@@ -40,6 +40,18 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+#card1 .card:hover {
+  animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+
+#card2 .card:hover {
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+
+#card3 .card:hover {
+  animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+
 /* Card content styling */
 .card-content {
   padding: 15px;
