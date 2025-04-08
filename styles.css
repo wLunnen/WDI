@@ -98,8 +98,8 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  /* Adjust grid for smaller screens */
-  .card { /*
+  /* Adjust grid for smaller screens *//*
+  .card { 
     width: 100%;
     max-width: 300px;
   }
