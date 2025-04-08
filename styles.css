@@ -70,7 +70,8 @@ body {
   margin-top: 10px;
 }
 
-/* Footer styles */
+
+/* Footer styles 
 footer {
   background-color: #000000;
   color: white;
@@ -98,7 +99,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
   /* Adjust grid for smaller screens */
-  .card {
+  .card { /*
     width: 100%;
     max-width: 300px;
   }
@@ -108,4 +109,6 @@ footer a:hover {
   height: 1em; 
   border: clear;
   border-radius: 50%;
-}
+} 
+  
+*/
