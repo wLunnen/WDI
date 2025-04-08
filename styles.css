@@ -106,5 +106,6 @@ footer a:hover {
 #favicon {
   width: 1em; 
   height: 1em; 
-  border: none;
+  border: clear;
+  border: round;
 }
