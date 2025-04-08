@@ -70,6 +70,23 @@ body {
   margin-top: 10px;
 }
 
+/*card animations*/
+#card1 {
+  animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+#card2 {
+  width: 1em; 
+  height: 1em; 
+  border: clear;
+  border-radius: 50%;
+} 
+#card3 {
+  width: 1em; 
+  height: 1em; 
+  border: clear;
+  border-radius: 50%;
+} 
+
 
 /* Footer styles 
 footer {
