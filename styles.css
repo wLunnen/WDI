@@ -107,5 +107,5 @@ footer a:hover {
   width: 1em; 
   height: 1em; 
   border: clear;
-  border: round;
+  border-radius: 50%;
 }
