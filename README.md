@@ -1,6 +1,4 @@
-# WDI
-Current official page for the western development initiative.
-(In Development)
+# WDI (Currently under development)
 
 <p>
   Welcome to <strong>Western Development Initiative</strong>, where custom design and scalable development come together to elevate your brand.
