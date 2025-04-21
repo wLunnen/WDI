@@ -11,92 +11,122 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin: 1rem;
+    float: left;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-box-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1rem;
+  }
+
+  .flip-box-back h3, .flip-box-back p {
+    margin: 0.5rem 0;
+  }
+
+  .flip-box-back a img {
+    height: 32px;
+    margin: 0.5rem;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  footer.footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+
+  footer.footer img {
+    height: 32px;
+    margin: 0.5rem;
+  }
+</style>
 </head>
   
 <body>
   
-  <div class="container">
-    
-    <div class="card col-md-4" id="card1">
-      <div class="card-content">
-        <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Archive index.html" href="https://linktr.ee/quarter.puerto">
+  <div class="container card-grid" id="cardContainer">
+  <!-- Example Card -->
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive">
+      </div>
+      <div class="flip-box-back">
         <h3>Archive</h3>
-        <p>This site designed as an audio archive for local artists and other personal favorites from my travels.</p>
-      </div>
-    </div>
-    
-    <div class="card col-md-4">
-      <div class="card-content" id="card2">
-        <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="ion no" href="https://linktr.ee/quarter.puerto">
-        <h3>B</h3>
-        <p>Content</p>
-      </div>
-    </div>
-
-    <div class="card col-md-4">
-      <div class="card-content" id="card3">
-        <img src="https://i.postimg.cc/xTjXBgHS/DALL-E-2025-03-20-13-01-04-Victory-is-achieved-as-the-knights-on-giraffes-stand-triumphantly-in-th.webp" alt="contact form" href="https://linktr.ee/quarter.puerto">
-        <h3>C</h3>
-        <p>General contact page for all online content. Let me know what you think!</p>
-      </div>
-    </div>
-  </div>
-    
-  <div class="container">
-    
-    <div class="card col-md-4" id="card1">
-      <div class="card-content">
-        <img src="https://i.postimg.cc/rsF9dR26/Screenshot-20250313-123033-2.png" alt="Corvallis Support Services Consolidated">
-        <h3>Corvallis Support Services Consolidated</h3>
-        <p>This site made for the city of Corvallis. If you find yourself in need of immediate medical attention, please call 911.</p>
-      </div>
-    </div>
-
-    <div class="card col-md-4">
-      <div class="card-content" id="card2">
-        <img src="https://i.postimg.cc/hG621M62/Ss1.png" alt="Erich's Carpet Care index.html"/>
-        <h3>Erich's</h3>
-        <p>Charity project for local business still accepting customers!</p>
-      </div>
-    </div>
-
-    <div class="card col-md-4">
-      <div class="card-content" id="card3">
-        <img src="https://i.postimg.cc/pdcRpq61/Screenshot-20250401-091427.png-th.webp" alt="Codepen repo">
-        <h3>Codepen</h3>
-        <p>Current R&D midpoint for LLM based projects to be scaled for enterprise level pplications as well as streamlining smaller projects.</p>
-        <a href="https://www.codepen.io/">Check it out</a>
+        <p>Audio archive for local artists and favorites from my travels.</p>
+        <a href="https://linktr.ee/quarter.puerto">Visit</a>
       </div>
     </div>
   </div>
 
-  <div class="container">
-    
-    <div class="card col-md-4" id="card1">
-      <div class="card-content">
-        <img src="https://i.postimg.cc/qqwzz6PY/DALL-E-2025-03-20-13-02-14-A-grand-coronation-ceremony-takes-place-in-the-newly-conquered-castle.webp" alt="Replit repo">
-        <h3>Replit</h3>
-        <p>Repo used during coursework at LaunchCode KC. Great program. Highly recommend!</p>
-        <a href="">Check it out</a>
-        <a href="https://www.launchcode.org/">Check them out</a>
+  <!-- Repeat for all other cards... -->
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Contact">
       </div>
-    </div>
-
-    <div class="card col-md-4">
-      <div class="card-content" id="card2">
-        <img src="https://i.postimg.cc/W3MDcHXs/DALL-E-2025-03-20-13-03-26-A-dramatic-coronation-scene-in-the-newly-conquered-castle-The-leader-o.webp" alt="Github repo"/>
-        <h3>Github</h3>
-        <p>Check out my current body of work with projects throughout my development career. Feel free to reach out with any questions or requests for service!</p>
-        <a href="">The Hub</a>
-        <a href="">Services Page (LinkedIn)</a>
-      </div>
-    </div>
-
-    <div class="card col-md-4">
-      <div class="card-content" id="card3">
-        <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <h3>Additional Card</h3>
-        <p>More content here to fill the grid.</p>
+      <div class="flip-box-back">
+        <h3>Contact</h3>
+        <p>General contact page for all media/sites.</p>
+        <a href="https://linktr.ee/quarter.puerto">Contact</a>
       </div>
     </div>
   </div>
