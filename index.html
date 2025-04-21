@@ -1,370 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WDI</title>
-  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/1tQhBrms/logo-fav-cropped.png">
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/XvXGLqbt/og-logo.jpg">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
   <style>
-  * {
-    box-sizing: border-box;
-  }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
-  .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px;
-  }
+    body {
+      font-family: sans-serif;
+      background: url('https://i.postimg.cc/sDFQRqwc/OG-logo.png') repeat center center / cover;
+      background-attachment: fixed;
+      transition: background 0.5s ease;
+      padding-bottom: 70px;
+    }
 
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 1rem;
+      justify-content: center;
+      min-height: calc(100vh - 70px);
+    }
 
-  .flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-  }
+    .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+      transition: transform 0.3s ease;
+    }
 
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
+    .flip-box:hover {
+      transform: scale(1.05);
+    }
 
-  .flip-box-front {
-    background-color: #bbb;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
 
-  .flip-box-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+    .flip-box.flipped .flip-box-inner {
+      transform: rotateY(180deg);
+    }
 
-  .flip-box-back {
-    background-color: dodgerblue;
-    color: white;
-    transform: rotateY(180deg);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-  }
-    /* Global styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
-}
+    .flip-box-front,
+    .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-/* Container for cards */
-.container {
-  display: flex;
-  flex-wrap: wrap;  /* This ensures the cards will wrap into multiple rows */
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-}
+    .flip-box-front {
+      background-color: #fff;
+    }
 
-/* Card styles */
-.card {
-  width: 100%;
-  height: 300px; /* Adjusted height to accommodate image */
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  position: relative;
-}
+    .flip-box-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
+    .flip-box-back {
+      background-color: dodgerblue;
+      color: white;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
 
-.card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
+    .flip-box-back h3 {
+      margin-bottom: 0.5rem;
+    }
 
-/*
-#card1 .card:hover {
-  animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-} 
+    .flip-box-back a {
+      margin-top: 0.5rem;
+      color: white;
+      text-decoration: underline;
+    }
 
-#card2 .card:hover {
-  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-} 
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+    }
 
-#card3 .card:hover {
-  animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-} 
-*/
+    .footer a {
+      margin: 0 10px;
+    }
 
-/* Card content styling */
-.card-content {
-  padding: 15px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
+    .footer img {
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s ease;
+    }
 
-.card-content img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px; /* Space between image and text */
-}
+    .footer img:hover {
+      transform: scale(1.1);
+    }
 
-.card h3 {
-  margin: 0;
-  font-size: 24px;
-  color: #333;
-}
-
-.card p {
-  color: #777;
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-/*card animations*/
-#card1 {
-  animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-} 
-#card2 {
-  width: 1em; 
-  height: 1em; 
-  border: clear;
-  border-radius: 50%;
-} 
-#card3 {
-  width: 1em; 
-  height: 1em; 
-  border: clear;
-  border-radius: 50%;
-} 
-/* Footer styles 
-footer {
-  background-color: #000000;
-  color: white;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 16px;
-  max-height: 35px;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-}
-
-footer a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-@media (max-width: 768px) {
-  /* Adjust grid for smaller screens *//*
-  .card { 
-    width: 100%;
-    max-width: 300px;
-  }
-
-#favicon {
-  width: 1em; 
-  height: 1em; 
-  border: clear;
-  border-radius: 50%;
-} 
-  
-*/
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
   </style>
 </head>
-  <body>
-    <!--sidebars-->
-    <div class="w3-sidebar w3-bar-block" style="width:8em; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
-      <a href="https://www.linkedin.com/company/western-development-initiative/">
-        <img src="https://i.postimg.cc/9fpCfC27/red.png" alt="LinkedIn">
-      </a>
-    </div>
-    </div>
-    <div class="w3-sidebar w3-bar-block" style="width:8em; right:0; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh;">
-      <a href="https://www.linkedin.com/company/western-development-initiative/">
-        <img src="https://i.postimg.cc/j5SKwmqk/blue.png" alt="LinkedIn">
-      </a>
-    </div>
-    <div class="container" id="cardContainer">
-      
-    <!--click feature testing-->
 
-      <!-- Example Card -->
-      <div class="flip-box">
-        <div class="flip-box-inner">
-          <div class="flip-box-front">
-            <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive">
-          </div>
-          <div class="flip-box-back">
-            <h3>Archive</h3>
-            <p>Audio archive for local artists and favorites from my travels.</p>
-            <a href="https://linktr.ee/quarter.puerto">Visit</a>
-          </div>
-        </div>
-      </div>
+<body>
 
-      <div class="card">
-          <img src="https://i.postimg.cc/rpHmnrMV/CSSC.png" alt="Corvallis Support Services Consolidated">
-        <div class="card-content">
-          <h3>Corvallis Support Services Consolidated</h3>
-          <p>This site made for the city of Corvallis.</p>
-        </div>
-      </div>
+  <!-- Left Sidebar -->
+  <div class="w3-sidebar w3-bar-block" style="width:8em; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+    <a href="https://www.linkedin.com/company/western-development-initiative/">
+      <img src="https://i.postimg.cc/9fpCfC27/red.png" alt="LinkedIn">
+    </a>
+  </div>
 
-      <!---->
-      
-      <div class="flip-box">
+  <!-- Right Sidebar -->
+  <div class="w3-sidebar w3-bar-block" style="width:8em; right:0; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh;">
+    <a href="https://www.linkedin.com/company/western-development-initiative/">
+      <img src="https://i.postimg.cc/j5SKwmqk/blue.png" alt="LinkedIn">
+    </a>
+  </div>
+
+  <!-- Card Container -->
+  <div class="container" id="cardContainer">
+
+    <!-- Card 1 -->
+    <div class="flip-box">
       <div class="flip-box-inner">
-        <div id="click" class="card flip-box-front">
-          <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive index.html" href="https://linktr.ee/quarter.puerto">
-        <div class="card-content">
-          <h3>Archive</h3>
-          <p>Designed as an audio archive for local artists and other personal favorites from my travels.</p>
+        <div class="flip-box-front">
+          <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive">
         </div>
-       </div>
+        <div class="flip-box-back">
+          <h3>Archive</h3>
+          <p>Audio archive for local artists and favorites from my travels.</p>
+          <a href="https://linktr.ee/quarter.puerto">Visit</a>
+        </div>
       </div>
-      </div>
-      <div class="card">
-        <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Contact" href="https://linktr.ee/quarter.puerto">
-        <div class="card-content">
+    </div>
+
+    <!-- Card 2 -->
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Contact">
+        </div>
+        <div class="flip-box-back">
           <h3>Contact</h3>
           <p>General contact page for all media/sites.</p>
+          <a href="https://linktr.ee/quarter.puerto">Visit</a>
         </div>
       </div>
-      <div class="card">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
           <img src="https://i.postimg.cc/rpHmnrMV/CSSC.png" alt="Corvallis Support Services Consolidated">
-        <div class="card-content">
-          <h3>Corvallis Support Services Consolidated</h3>
-          <p>This site made for the city of Corvallis.</p>
+        </div>
+        <div class="flip-box-back">
+          <h3>CSSC</h3>
+          <p>This site was made for the city of Corvallis.</p>
+          <a href="#">Visit</a>
         </div>
       </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/hG621M62/Ss1.png" alt="Erich's Carpet Care index.html"/>
-        <div class="card-content">
-          <h3>Erich's</h3>
-          <p>Community project for local business still accepting customers!</p>
-        </div>
-      </div>
-      <div class="card">
-      <img src="https://i.postimg.cc/C5TKYpR9/codepen-home.png" alt="Codepen repo">
-        <div class="card-content">
-          <h3>Codepen</h3>
-          <p>Current R&D midpoint for LLM based projects to be scaled for enterprise level pplications as well as streamlining smaller projects.</p>
-          <a href="https://codepen.io/wes-lunnen">
-            <img src="https://i.postimg.cc/3R2LS2mm/codepen-logo.png" alt="CodePen">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/CM6pXWz7/replit-screenshot.png" alt="Replit repo">
-        <div class="card-content">
-          <h3>Replit</h3>
-          <p>Repo used during coursework at LaunchCode KC. Great program. Highly recommend!</p
-          <a href="https://replit.com/@wlunnen1210">
-            <img src="https://i.postimg.cc/4ytCz3s3/replit-logo-cropped.png" alt="Replit">
-          </a>
-          <a href="https://www.launchcode.org/">
-            <img src="https://i.postimg.cc/3N7tPWF6/launchcode-KClogo.jpg" alt="LaunchCodeKC">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/9FH4HZTz/github-home.png" alt="Github repo"/>
-        <div class="card-content">
-          <h3>Github</h3>
-          <p>Check out my current body of work with projects throughout my development career.</p>
-          <a href="https://github.com/wLunnen">
-            <img src="https://i.postimg.cc/5th7SsYf/github-logo.webp" alt="Github">
-          </a>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <div class="card-content">
-          <h3>Additional Card</h3>
-          <p>More content here to fill the grid.</p>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <div class="card-content">
-          <h3>Additional Card</h3>
-          <p>More content here to fill the grid.</p>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <div class="card-content">
-          <h3>Additional Card</h3>
-          <p>More content here to fill the grid.</p>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <div class="card-content">
-          <h3>Additional Card</h3>
-          <p>More content here to fill the grid.</p>
-        </div>
-      </div>
-      <div class="card">
-          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
-        <div class="card-content">
-          <h3>Additional Card</h3>
-          <p>More content here to fill the grid.</p>
-        </div>
-      </div>
-    
-    <footer class="footer">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
     <a href="https://www.fiverr.com/wlunnen/buying?source=avatar_menu_profile">
-      <img src="https://fiverr-res.cloudinary.com/npm-assets/layout-service/favicon-32x32.8f21439.png" alt="Fiverr">
+      <img src="https://i.postimg.cc/CKqJ5bvX/fiverr-logo.webp" alt="Fiverr">
     </a>
     <a href="https://wlunnen.github.io/WDI/">
-      <img src="https://i.postimg.cc/RZHDYJbF/logo-text-cropped.png" alt="WDI Portfolio">
+      <img src="https://i.postimg.cc/wvzJFF4G/WDI-fav.png" alt="WDI Portfolio">
     </a>
     <a href="https://www.upwork.com/nx/find-work/best-matches">
-      <img src="https://i.postimg.cc/90C8RxWw/upwork-512.webp" alt="Upwork">
+      <img src="https://i.postimg.cc/90C8RxWw/upwork-logo.webp" alt="Upwork">
     </a>
     <a href="https://www.linkedin.com/company/western-development-initiative/">
       <img src="https://i.postimg.cc/C1Q5d2Cm/linkedin-icon.webp" alt="LinkedIn">
@@ -372,9 +219,11 @@ footer a:hover {
     <a href="https://linktr.ee/quarter.puerto">
       <img src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="Linktree">
     </a>
-    </footer>
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
