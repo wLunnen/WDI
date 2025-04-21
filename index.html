@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WDI</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
   <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/1tQhBrms/logo-fav-cropped.png">
-  
+
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
   <style>
   * {
@@ -23,8 +21,6 @@
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
-    margin: 1rem;
-    float: left;
   }
 
   .flip-box-inner {
@@ -44,18 +40,16 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+    backface-visibility: hidden;
   }
 
   .flip-box-front {
     background-color: #bbb;
     color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .flip-box-front img {
@@ -68,90 +62,175 @@
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
-    padding: 1rem;
-  }
-
-  .flip-box-back h3, .flip-box-back p {
-    margin: 0.5rem 0;
-  }
-
-  .flip-box-back a img {
-    height: 32px;
-    margin: 0.5rem;
-  }
-
-  .card-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 10px;
   }
-
-  footer.footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #f8f9fa;
-  }
-
-  footer.footer img {
-    height: 32px;
-    margin: 0.5rem;
-  }
-</style>
+  </style>
 </head>
-  
-<body>
-  
-  <div class="container card-grid" id="cardContainer">
-  <!-- Example Card -->
-  <div class="flip-box">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive">
-      </div>
-      <div class="flip-box-back">
-        <h3>Archive</h3>
-        <p>Audio archive for local artists and favorites from my travels.</p>
-        <a href="https://linktr.ee/quarter.puerto">Visit</a>
-      </div>
+  <body>
+    <!--sidebars-->
+    <div class="w3-sidebar w3-bar-block" style="width:8em; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+      <a href="https://www.linkedin.com/company/western-development-initiative/">
+        <img src="https://i.postimg.cc/9fpCfC27/red.png" alt="LinkedIn">
+      </a>
     </div>
-  </div>
-
-  <!-- Repeat for all other cards... -->
-  <div class="flip-box">
-    <div class="flip-box-inner">
-      <div class="flip-box-front">
-        <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Contact">
-      </div>
-      <div class="flip-box-back">
-        <h3>Contact</h3>
-        <p>General contact page for all media/sites.</p>
-        <a href="https://linktr.ee/quarter.puerto">Contact</a>
-      </div>
     </div>
-  </div>
+    <div class="w3-sidebar w3-bar-block" style="width:8em; right:0; background-image: url('https://i.postimg.cc/j5SKwmqk/blue.png'); background-repeat: repeat; background-size: auto 100%; height: 100vh;">
+      <a href="https://www.linkedin.com/company/western-development-initiative/">
+        <img src="https://i.postimg.cc/j5SKwmqk/blue.png" alt="LinkedIn">
+      </a>
+    </div>
+    <div class="container" id="cardContainer">
+      
+    <!--click feature testing-->
 
-  <!-- Footer 
-  <footer>
+      <!-- Example Card -->
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive">
+          </div>
+          <div class="flip-box-back">
+            <h3>Archive</h3>
+            <p>Audio archive for local artists and favorites from my travels.</p>
+            <a href="https://linktr.ee/quarter.puerto">Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+          <img src="https://i.postimg.cc/rpHmnrMV/CSSC.png" alt="Corvallis Support Services Consolidated">
+        <div class="card-content">
+          <h3>Corvallis Support Services Consolidated</h3>
+          <p>This site made for the city of Corvallis.</p>
+        </div>
+      </div>
+
+      <!---->
+      
+      <div class="flip-box">
+      <div class="flip-box-inner">
+        <div id="click" class="card flip-box-front">
+          <img src="https://i.postimg.cc/SxFrLc9z/Screenshot-2.png" alt="Archive index.html" href="https://linktr.ee/quarter.puerto">
+        <div class="card-content">
+          <h3>Archive</h3>
+          <p>Designed as an audio archive for local artists and other personal favorites from my travels.</p>
+        </div>
+       </div>
+      </div>
+      </div>
+      <div class="card">
+        <img src="https://i.postimg.cc/Qd1fvfDb/Screenshot-1.png" alt="Contact" href="https://linktr.ee/quarter.puerto">
+        <div class="card-content">
+          <h3>Contact</h3>
+          <p>General contact page for all media/sites.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/rpHmnrMV/CSSC.png" alt="Corvallis Support Services Consolidated">
+        <div class="card-content">
+          <h3>Corvallis Support Services Consolidated</h3>
+          <p>This site made for the city of Corvallis.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/hG621M62/Ss1.png" alt="Erich's Carpet Care index.html"/>
+        <div class="card-content">
+          <h3>Erich's</h3>
+          <p>Community project for local business still accepting customers!</p>
+        </div>
+      </div>
+      <div class="card">
+      <img src="https://i.postimg.cc/C5TKYpR9/codepen-home.png" alt="Codepen repo">
+        <div class="card-content">
+          <h3>Codepen</h3>
+          <p>Current R&D midpoint for LLM based projects to be scaled for enterprise level pplications as well as streamlining smaller projects.</p>
+          <a href="https://codepen.io/wes-lunnen">
+            <img src="https://i.postimg.cc/3R2LS2mm/codepen-logo.png" alt="CodePen">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/CM6pXWz7/replit-screenshot.png" alt="Replit repo">
+        <div class="card-content">
+          <h3>Replit</h3>
+          <p>Repo used during coursework at LaunchCode KC. Great program. Highly recommend!</p
+          <a href="https://replit.com/@wlunnen1210">
+            <img src="https://i.postimg.cc/4ytCz3s3/replit-logo-cropped.png" alt="Replit">
+          </a>
+          <a href="https://www.launchcode.org/">
+            <img src="https://i.postimg.cc/3N7tPWF6/launchcode-KClogo.jpg" alt="LaunchCodeKC">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/9FH4HZTz/github-home.png" alt="Github repo"/>
+        <div class="card-content">
+          <h3>Github</h3>
+          <p>Check out my current body of work with projects throughout my development career.</p>
+          <a href="https://github.com/wLunnen">
+            <img src="https://i.postimg.cc/5th7SsYf/github-logo.webp" alt="Github">
+          </a>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
+        <div class="card-content">
+          <h3>Additional Card</h3>
+          <p>More content here to fill the grid.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
+        <div class="card-content">
+          <h3>Additional Card</h3>
+          <p>More content here to fill the grid.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
+        <div class="card-content">
+          <h3>Additional Card</h3>
+          <p>More content here to fill the grid.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
+        <div class="card-content">
+          <h3>Additional Card</h3>
+          <p>More content here to fill the grid.</p>
+        </div>
+      </div>
+      <div class="card">
+          <img src="https://i.postimg.cc/QChF8Jy1/DALL-E-2025-03-20-13-03-29-A-dramatic-festival-in-the-city-as-the-new-ruler-rides-his-war-worn-gir.webp" alt="Card 2 Image">
+        <div class="card-content">
+          <h3>Additional Card</h3>
+          <p>More content here to fill the grid.</p>
+        </div>
+      </div>
+    
+    <footer class="footer">
     <a href="https://www.fiverr.com/wlunnen/buying?source=avatar_menu_profile">
-      <img id="favicon" src="https://fiverr-res.cloudinary.com/npm-assets/layout-service/favicon-32x32.8f21439.png" alt="favicon text logo">
+      <img src="https://fiverr-res.cloudinary.com/npm-assets/layout-service/favicon-32x32.8f21439.png" alt="Fiverr">
     </a>
-    <a  href="https://wlunnen.github.io/WDI/">
-      <img id="favicon" src="https://i.postimg.cc/RZHDYJbF/logo-text-cropped.png" alt="favicon text logo">
+    <a href="https://wlunnen.github.io/WDI/">
+      <img src="https://i.postimg.cc/RZHDYJbF/logo-text-cropped.png" alt="WDI Portfolio">
     </a>
     <a href="https://www.upwork.com/nx/find-work/best-matches">
-      <img id="favicon" src="https://i.postimg.cc/90C8RxWw/upwork-512.webp" alt="favicon text logo">
+      <img src="https://i.postimg.cc/90C8RxWw/upwork-512.webp" alt="Upwork">
     </a>
-    <a href="https://www.linkedin.com/in/thomas-lunnen-iii-a35017175">
-      <img id="favicon" src="https://i.postimg.cc/C1Q5d2Cm/linkedin-icon.webp" alt="favicon text logo">
+    <a href="https://www.linkedin.com/company/western-development-initiative/">
+      <img src="https://i.postimg.cc/C1Q5d2Cm/linkedin-icon.webp" alt="LinkedIn">
     </a>
     <a href="https://linktr.ee/quarter.puerto">
-      <img id="favicon" src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="favicon text logo">
+      <img src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="Linktree">
     </a>
-  </footer>
-  -->
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
