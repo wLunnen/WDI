@@ -1,4 +1,4 @@
-# W3DAI
+# W3DAi
 
 <p>
   Welcome to <strong>W3DAI</strong>. We custom design multi-faceted, scalable development projects to come together to elevate your brand.
