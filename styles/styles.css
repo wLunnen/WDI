@@ -142,6 +142,7 @@ textarea {
   resize: vertical;
 }
 
+/*
 .footer {
   position: fixed;
   bottom: 0;
@@ -169,8 +170,8 @@ textarea {
 .footer a {
   margin: 0 10px;
 }
+*/
 
-/* old
 .footer {
   position: fixed;
   bottom: 0;
@@ -205,7 +206,6 @@ textarea {
     justify-content: space-around;
   }
 }
-*/
 
 
 
