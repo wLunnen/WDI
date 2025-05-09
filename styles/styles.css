@@ -1,9 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
-  background: #800000;
-  margin: 0;
-  padding: 2rem;
-  color: #333;
+  background: url('https://i.postimg.cc/vmMNH02p/teal-bg.png') repeat center center / cover;
+  background-attachment: scroll, local;
+  transition: background 0.5s ease;
+  padding-bottom: 70px;
 }
 
 .container {
@@ -157,19 +163,7 @@ button[type="submit"]:hover {
 
 /* migrated from index */
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: sans-serif;
-      background: url('https://i.postimg.cc/XvXGLqbt/og-logo.jpg') repeat center center / cover;
-      background-attachment: scroll, local;
-      transition: background 0.5s ease;
-      padding-bottom: 70px;
-    }
+    
 
     .container {
       display: flex;
