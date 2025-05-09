@@ -186,23 +186,6 @@ button[type="submit"]:hover {
   background: #000;
 }
 
-.calendly-button {
-  background: #333;
-  color: #fff;
-  border: none;
-  padding: 0.75rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  text-decoration: none;
-  width: 48%;  /* Ensures the button takes up 48% of the container */
-  box-sizing: border-box; /* Ensures padding is included in the width */
-}
-
-.calendly-button:hover {
-  background: #000;
-}
-
 .login-button {
   background: #333;
   color: #fff;
