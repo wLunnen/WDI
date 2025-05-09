@@ -69,8 +69,7 @@ body {
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: white;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -141,36 +140,6 @@ input, textarea {
 textarea {
   resize: vertical;
 }
-
-/*
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-}
-
-.footer img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease;
-}
-
-.footer img:hover {
-  transform: scale(1.1);
-}
-
-.footer a {
-  margin: 0 10px;
-}
-*/
 
 .footer {
   position: fixed;
