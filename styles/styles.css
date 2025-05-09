@@ -36,8 +36,6 @@ body {
 .container {
   max-width: 600px;
   margin: auto;
-  background: #fff;
-  opacity: 0;
   padding: 1.5rem 2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
