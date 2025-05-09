@@ -74,8 +74,8 @@ textarea {
 
 .button-container {
   display: flex;
-  justify-content: space-between;  /* Ensures space between the buttons */
-  gap: 20px;  /* Adds space between buttons */
+  justify-content: space-between;
+  gap: 20px; 
   margin-top: 2rem;
 }
 
@@ -88,8 +88,8 @@ button[type="submit"] {
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
-  width: 48%;  /* Ensures the button takes up 48% of the container */
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  width: 48%; 
+  box-sizing: border-box;
 }
 
 button[type="submit"]:hover {
@@ -105,8 +105,8 @@ button[type="submit"]:hover {
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
-  width: 48%;  /* Ensures the button takes up 48% of the container */
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  width: 48%;
+  box-sizing: border-box;
 }
 
 .calendly-button:hover {
@@ -122,8 +122,8 @@ button[type="submit"]:hover {
   cursor: pointer;
   border-radius: 4px;
   text-decoration: none;
-  width: 48%;  /* Ensures the button takes up 48% of the container */
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  width: 48%;
+  box-sizing: border-box; 
 }
 
 .login-button:hover {
