@@ -22,7 +22,6 @@ body {
   padding-bottom: 70px;
 }
 
-/* old 
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -31,8 +30,8 @@ body {
   justify-content: center;
   min-height: calc(100vh - 70px);
 }
-*/
 
+/* old 
 .container {
   max-width: 600px;
   margin: auto;
@@ -40,6 +39,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+*/
 
 .flip-box {
   background-color: transparent;
