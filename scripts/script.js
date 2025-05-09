@@ -14,6 +14,7 @@ document.querySelectorAll('.tabs button').forEach(button => {
     document.getElementById(button.dataset.tab).classList.add('active');
   });
 });
+
 document.getElementById('applicationForm').addEventListener('submit', (e) => {
   e.preventDefault();
   alert('Application submitted!');
@@ -22,6 +23,6 @@ document.getElementById('applicationForm').addEventListener('submit', (e) => {
 
 //tbi
 function openMultiplePages() {
-   window.open("https://www.linkedin.com/company/western-development-initiative/", "_blank");
+   window.open("https://www.linkedin.com/company/western-development-initiative/", "https://wlunnen.github.io/W3DAi/pages/contact");
    window.open("https://wlunnen.github.io/Co/", "_blank");
 }
