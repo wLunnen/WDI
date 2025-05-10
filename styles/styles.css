@@ -88,6 +88,11 @@ body {
   text-decoration: underline;
 }
 
+.flip-box-back img {
+  width: 30px;
+  height: 30px;
+}
+
 .tabs {
   display: flex;
   border-bottom: 1px solid #ccc;
