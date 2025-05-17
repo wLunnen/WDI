@@ -7,8 +7,8 @@ html, body {
 body {
   font-family: sans-serif;
   /*background: url('https://i.postimg.cc/vmMNH02p/teal-bg.png') repeat center center / cover;*/
-  /*background: url('https://i.postimg.cc/B6QBRhhX/blue.jpg') repeat center center / cover;*/
-  background: url('https://i.postimg.cc/SRn7xnb4/red.jpg') repeat center center / cover;
+  background: url('https://i.postimg.cc/B6QBRhhX/blue.jpg') repeat center center / cover;
+  /*background: url('https://i.postimg.cc/SRn7xnb4/red.jpg') repeat center center / cover;*/
   background-attachment: scroll, local;
   transition: background 0.5s ease;
   padding-bottom: 70px;
