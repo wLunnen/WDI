@@ -70,6 +70,7 @@ body {
 }
 
 .flip-box-back {
+  position: absolute;
   background-color: white;
   transform: rotateY(180deg);
   display: flex;
