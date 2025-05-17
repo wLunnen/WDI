@@ -48,6 +48,7 @@ body {
   transform: rotateY(180deg);
 }
 
+/*
 .flip-box-front,
 .flip-box-back {
   position: absolute;
@@ -59,6 +60,7 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+*/
 
 .flip-box-front {
   background-color: #fff;
