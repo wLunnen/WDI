@@ -184,5 +184,5 @@ textarea {
 }
 
 .w3-sidebar {
-   display: none;
+   display: flex;
 }
