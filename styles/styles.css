@@ -184,5 +184,12 @@ textarea {
 }
 
 .w3-sidebar {
-   display: flex;
+  display: flex;
+  width: 8em;
+  height: 100vh;
+  background-image: url('https://i.postimg.cc/8CCP8R48/bw-bg.png');
+  background-repeat: repeat;
+  background-size: auto 100%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
