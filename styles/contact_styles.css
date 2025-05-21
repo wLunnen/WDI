@@ -47,9 +47,7 @@ body {
   padding: 1.5rem 2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  gap: 1rem;
   justify-content: center;
-  min-height: calc(100vh - 70px);
 }
 
 .tabs {
