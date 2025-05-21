@@ -44,8 +44,39 @@
         <label>Resume: <input type="file" name="resume" accept=".pdf,.docx" required /></label>
       </section>
       <a href="https://calendly.com/wesley-lunnen" class="calendly-button">Schedule</a>
-      <a href="https://wlunnen.github.io/W3D/pages/login.html" class="login-button">Login</a>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> <!--modal login-->
       <button type="submit">Submit</button>
+
+      <!--modal-->
+      <div id="id01" class="modal">
+
+      <form class="modal-content animate" enctype="text/plain">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="login_container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+    <!--end of modal-->
+        
+  </form>
+</div>
     </form>
   </div>
   <footer class="footer">
@@ -73,5 +104,18 @@
     </a>
   </footer>
   <script src="script.js"></script>
+  <script>
+  // Get the modal
+  //implement hashing through enctype after form is working
+  //consider business selling sites to inmates to get support from the community for their cause 
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
 </body>
 </html>
