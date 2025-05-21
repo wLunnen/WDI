@@ -41,6 +41,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 600px;
   margin: auto;
   background: #fff;
