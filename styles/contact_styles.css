@@ -11,9 +11,9 @@ html, body {
 /*old
 body {
   font-family: sans-serif;
-  /*background: url('https://i.postimg.cc/vmMNH02p/teal-bg.png') repeat center center / cover;*/
+  background: url('https://i.postimg.cc/vmMNH02p/teal-bg.png') repeat center center / cover;
   background: url('https://i.postimg.cc/B6QBRhhX/blue.jpg') repeat center center / cover;
-  /*background: url('https://i.postimg.cc/SRn7xnb4/red.jpg') repeat center center / cover;*/
+  background: url('https://i.postimg.cc/SRn7xnb4/red.jpg') repeat center center / cover;
   background-attachment: scroll, local;
   transition: background 0.5s ease;
   padding-bottom: 70px;
@@ -40,12 +40,16 @@ body {
 */
 
 .container {
+  display: flex;
   max-width: 600px;
   margin: auto;
   background: #fff;
   padding: 1.5rem 2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
+  gap: 1rem;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
 }
 
 .tabs {
