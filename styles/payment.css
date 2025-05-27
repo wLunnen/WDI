@@ -1,0 +1,72 @@
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: #f4f4f4;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        text-align: center;
+        padding: 2rem 0;
+        background: #eaeaea;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2rem;
+      }
+      .container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+      /* Payment form styling */
+      .payment-form {
+        background: #fff;
+        padding: 2rem;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .payment-form label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+      .payment-form input {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      /* To layout card details side-by-side */
+      .card-details {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .card-details > div {
+        flex: 1;
+        min-width: 140px;
+      }
+      button {
+        width: 100%;
+        padding: 1rem;
+        background: #333;
+        color: #fff;
+        border: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+      button:hover {
+        background: #555;
+      }
+      /* Optional: A subtle note to reinforce security */
+      .secure-note {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-top: 1rem;
+        color: #777;
+      }
