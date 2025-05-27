@@ -7,12 +7,9 @@ html, body {
 body {
   font-family: sans-serif;
   /*background: url('https://i.postimg.cc/vmMNH02p/teal-bg.png') repeat center center / cover;*/
-  background: url('https://i.postimg.cc/B6QBRhhX/blue.jpg') no-repeat center center / cover;
+  background: url('https://i.postimg.cc/B6QBRhhX/blue.jpg') repeat center center / cover;
   /*background: url('https://i.postimg.cc/SRn7xnb4/red.jpg') repeat center center / cover;*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center; 
-  /*background-attachment: scroll, local;*/
+  background-attachment: scroll, local;
   transition: background 0.5s ease;
   padding-bottom: 70px;
 }
@@ -179,21 +176,19 @@ textarea {
   transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-  body {
-    font-family: sans-serif;
-    background: url('https://i.postimg.cc/sfSPJFWp/Blue.png') no-repeat center center / cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center; 
+.w3-sidebar {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  .w3-sidebar {
+    display: none;
   }
-  
+}
+
+@media (max-width: 768px) {
   .container {
     flex-direction: row;
     justify-content: space-around;
   }
-}
-
-.w3-sidebar {
-   display: none;
 }
