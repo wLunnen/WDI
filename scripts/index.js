@@ -29,12 +29,12 @@ document.querySelectorAll('.tabs button').forEach(button => {
 
 //for banner
 function openMultiplePages() {
-   window.open("https://www.linkedin.com/company/western-development-initiative/", "https://wlunnen.github.io/W3DAi/pages/contact");
+   window.open("https://www.linkedin.com/company/western-development-initiative/", "_blank");
    window.open("https://wlunnen.github.io/Co/", "_blank");
 }
 
 //for desktop and mobile emulators
 function openMultipleApps() {
-  window.open();
-  window.open();
+   window.open("https://example.com/app1", "_blank");
+   window.open("https://example.com/app2", "_blank");
 }
