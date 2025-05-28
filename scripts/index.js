@@ -28,13 +28,13 @@ document.querySelectorAll('.tabs button').forEach(button => {
 //Rnd section ---------------------------------------------------------------------------------------------------------------------
 
 //for banner
-function openMultiplePages() {
+function openMultiplePages(event) {
    window.open("https://www.linkedin.com/company/western-development-initiative/", "_blank");
    window.open("https://wlunnen.github.io/W3D/pages/contact", "_blank");
 }
 
 //for desktop and mobile emulators
-function openMultipleApps() {
+function openMultipleApps(event) {
    window.open("https://wlunnen.github.io/W3D/pages/payment", "_blank");
    window.open("https://www.linkedin.com/company/western-development-initiative", "_blank");
 }
