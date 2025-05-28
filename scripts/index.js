@@ -30,11 +30,11 @@ document.querySelectorAll('.tabs button').forEach(button => {
 //for banner
 function openMultiplePages() {
    window.open("https://www.linkedin.com/company/western-development-initiative/", "_blank");
-   window.open("https://wlunnen.github.io/Co/", "_blank");
+   window.open("https://wlunnen.github.io/W3D/pages/contact", "_blank");
 }
 
 //for desktop and mobile emulators
 function openMultipleApps() {
-   window.open("https://example.com/app1", "_blank");
-   window.open("https://example.com/app2", "_blank");
+   window.open("https://wlunnen.github.io/W3D/pages/payment", "_blank");
+   window.open("https://www.linkedin.com/company/western-development-initiative", "_blank");
 }
