@@ -38,3 +38,21 @@ function openMultipleApps(event) {
    window.open("https://wlunnen.github.io/W3D/pages/payment", "_blank");
    window.open("https://www.linkedin.com/company/western-development-initiative", "_blank");
 }
+
+function openTwoPages() {
+// Open the first window immediately
+window.open(
+                "https://wlunnen.github.io/W3D/pages/payment",
+                "_blank",
+                "width=800,height=600,top=100,left=100,resizable=yes,scrollbars=yes"
+);
+
+            // Delay before opening the second window
+  setTimeout(function () {
+                window.open(
+                    "https://www.linkedin.com/company/western-development-initiative",
+                    "_blank",
+                    "width=800,height=600,top=100,left=950,resizable=yes,scrollbars=yes"
+                );
+            }, 2000); // 2000ms = 2 seconds
+}
