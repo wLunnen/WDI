@@ -54,5 +54,5 @@ window.open(
                     "_blank",
                     "width=800,height=600,top=100,left=950,resizable=yes,scrollbars=yes"
                 );
-            }, 2000); // 2000ms = 2 seconds
+            }, 100); // 2000ms = 2 seconds
 }
