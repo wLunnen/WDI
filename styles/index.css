@@ -175,9 +175,7 @@ textarea {
 }
 
 .w3-sidebar {
-  height: calc(100%-50px);
   display: flex;
-  object-fit: contain;
 }
 
 @media (max-width: 600px) {
