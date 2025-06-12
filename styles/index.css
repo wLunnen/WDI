@@ -69,7 +69,6 @@ body {
 }
 
 .flip-box-back {
-  background: url('https://i.postimg.cc/PfSz41cx/FSWD-CERT.png') repeat center center / cover;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
@@ -89,6 +88,12 @@ body {
 }
 
 .flip-box-back img {
+  display: flex;
+  left-margin: 5px;
+  top-margin: 5px;
+}
+
+.flip-box-back a img {
   width: 30px;
   height: 30px;
 }
