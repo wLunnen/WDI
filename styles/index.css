@@ -175,6 +175,7 @@ textarea {
 }
 
 .w3-sidebar {
+  height: 110%;
   display: flex;
 }
 
