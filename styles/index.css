@@ -88,6 +88,7 @@ body {
 }
 
 .flip-box-back img {
+  transform: scale(0.15);
   display: flex;
   left-margin: 5px;
   top-margin: 5px;
