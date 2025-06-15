@@ -18,6 +18,20 @@ html, body {
   z-index: 9999;
 }
 
+.header a {
+  margin: 0 10px;
+}
+
+.header img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.1);
+}
+
 
 body {
   font-family: sans-serif;
