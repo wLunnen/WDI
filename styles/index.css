@@ -68,6 +68,12 @@ body {
   object-fit: cover;
 }
 
+.flip-box-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .flip-box-back {
   background: #D5C3AC;
   transform: rotateY(180deg);
