@@ -94,11 +94,13 @@ body {
   text-decoration: underline;
 }
 
+/*
 .flip-box-back img {
   display: flex;
   left-margin: 5px;
   top-margin: 5px;
 }
+*/
 
 .flip-box-back a img {
   width: 30px;
