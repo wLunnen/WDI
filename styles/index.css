@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  padding: 1rem 1rem 4.5rem 1rem;
+  padding: 4.5rem 1rem 4.5rem 1rem;
   justify-content: center;
   min-height: calc(100vh - 70px);
 }
