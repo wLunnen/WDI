@@ -75,7 +75,7 @@ body {
 }
 
 .flip-box-back {
-  background: #D5C3AC;
+  background: #FAF9F6;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
