@@ -126,6 +126,7 @@ body {
   margin-top: 0.5rem;
   color: white;
   text-decoration: underline;
+  width: 100%;
 }
 
 .flip-box-back p {
