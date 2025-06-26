@@ -104,7 +104,7 @@ body {
 }
 
 .flip-box-back {
-  background: #FAF9F6;
+  background: url('https://i.postimg.cc/8CCP8R48/bw-bg.png');
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
