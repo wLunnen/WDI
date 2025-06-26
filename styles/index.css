@@ -122,6 +122,7 @@ body {
 }
 
 .flip-box-back a {
+  background: #FFFFFF;
   margin-top: 0.5rem;
   color: white;
   text-decoration: underline;
