@@ -279,16 +279,16 @@ span.psw {
   z-index: 9999;
 }
 
+.footer a {
+  margin: 0 10px;
+}
+
 .footer img {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
 .footer img:hover {
   transform: scale(1.1);
-}
-
-.footer a {
-  margin: 0 10px;
-}
+  }
