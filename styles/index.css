@@ -2,6 +2,11 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  background: #000000;
+  background-attachment: scroll, local;
+  transition: background 0.5s ease;
+  padding-bottom: 70px;
 }
 
 .header {
@@ -32,14 +37,11 @@ html, body {
   transform: scale(1.1);
 }
 
-
+/*
 body {
-  font-family: sans-serif;
-  background: #000000;
-  background-attachment: scroll, local;
-  transition: background 0.5s ease;
-  padding-bottom: 70px;
+  
 }
+*/
 
 .container {
   display: flex;
