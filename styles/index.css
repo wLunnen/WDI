@@ -57,8 +57,8 @@ body {
 
 .flip-box {
   background-color: transparent;
-  width: flex;
-  height: flex;
+  width: 10rem;
+  height: 10rem;
   perspective: 1000px;
   transition: transform 0.3s ease;
 }
