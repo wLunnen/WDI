@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: auto;
   font-family: sans-serif;
   background: #000000;
   background-attachment: scroll, local;
