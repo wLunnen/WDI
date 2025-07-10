@@ -6,7 +6,7 @@ html, body {
   background: #000000;
   background-attachment: scroll, local;
   transition: background 0.5s ease;
-  padding-bottom: 70px;
+  /*padding-bottom: 70px;*/
 }
 
 .header {
