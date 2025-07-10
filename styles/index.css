@@ -232,7 +232,7 @@ textarea {
 
 .w3-sidebar {
   height: 110%;
-  display: flex;
+  display: none;
 }
 
 @media (max-width: 600px) {
