@@ -45,7 +45,7 @@ body {
 
 .container {
   background: #000000;
-  margin: auto;
+  margin: 4.5rem 1rem 4.5rem 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
