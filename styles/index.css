@@ -97,13 +97,13 @@ body {
 }
 
 .flip-box-front img {
-  width: 1em;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .flip-box-back img {
-  width: 1em;
+  width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -123,7 +123,7 @@ body {
   align-items: center; 
   justify-content: center;
   height: 2.5rem%;
-  width: 1em;
+  width: 100%;
 }
 
 .flip-box-back a {
@@ -131,7 +131,7 @@ body {
   margin-top: 0.5rem;
   color: white;
   text-decoration: underline;
-  width: 1em;
+  width: 100%;
 }
 
 .flip-box-back p {
@@ -147,7 +147,7 @@ body {
 */
 
 .flip-box-back a img {
-  width: 1em;
+  width: 100%;
   height: 30px;
 }
 
