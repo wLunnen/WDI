@@ -3,7 +3,7 @@ html, body {
   margin: auto;
   padding: auto;
   font-family: sans-serif;
-  background: #000000;
+  background: url('https://i.postimg.cc/dVR6CjGW/Black.png');
   background-attachment: scroll, local;
   transition: background 0.5s ease;
 }
