@@ -3,7 +3,7 @@ html, body {
   margin: auto;
   padding: auto;
   font-family: sans-serif;
-  background: url('https://i.postimg.cc/dVR6CjGW/Black.png');
+  background: #000000;
   background-attachment: scroll, local;
   transition: background 0.5s ease;
 }
@@ -37,7 +37,7 @@ html, body {
 }
 
 .container {
-  background: #000000;
+  background: url('https://i.postimg.cc/dVR6CjGW/Black.png');
   margin: 1rem;
   display: flex;
   flex-wrap: wrap;
