@@ -115,7 +115,7 @@ html, body {
 }
 
 .flip-box-back h3 {
-  margin: auto;
+  margin-top: 1rem;
   background: #FFFFFF;
   align-items: center; 
   justify-content: center;
