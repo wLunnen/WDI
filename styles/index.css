@@ -109,8 +109,8 @@ body {
 }
 
 .flip-box-back {
-  background: url('https://i.postimg.cc/dVR6CjGW/Black.png');
-  ;
+  background: url('https://i.postimg.cc/8CCP8R48/bw-bg.png');
+  transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,6 +119,7 @@ body {
 
 .flip-box-back h3 {
   margin-bottom: 0.5rem;
+  background: #FFFFFF;
   align-items: center; 
   justify-content: center;
   height: 2.5rem%;
@@ -126,6 +127,7 @@ body {
 }
 
 .flip-box-back a {
+  background: #FFFFFF;
   margin-top: 0.5rem;
   color: white;
   text-decoration: underline;
@@ -133,6 +135,7 @@ body {
 }
 
 .flip-box-back p {
+  background: #FFFFFF;
 }
 
 /*
@@ -144,7 +147,7 @@ body {
 */
 
 .flip-box-back a img {
-  width: 100%;
+  width: 30px;
   height: 30px;
 }
 
@@ -246,5 +249,3 @@ textarea {
     justify-content: space-around;
   }
 }
-
-/*test*/
