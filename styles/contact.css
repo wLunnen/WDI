@@ -195,7 +195,8 @@ img.avatar {
 
 .login_container {
   background: white;
-  margin: auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
   padding: 16px;
 }
 
