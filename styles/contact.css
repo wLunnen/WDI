@@ -194,6 +194,7 @@ img.avatar {
 }
 
 .login_container {
+  margin: auto;
   padding: 16px;
 }
 
