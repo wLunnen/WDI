@@ -30,9 +30,10 @@ body {
 
 .container {
   display: flex;
+  position: center;
   flex-direction: column;
   max-width: 600px;
-  margin: 5rem;
+  margin: auto;
   background: #fff;
   padding: 1.5rem 2rem;
   border: 1px solid #ddd;
