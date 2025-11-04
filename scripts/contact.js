@@ -11,17 +11,12 @@ document.querySelectorAll('.tabs button').forEach(button => {
 document.getElementById('applicationForm').addEventListener('submit', (e) => {
   e.preventDefault();
   alert('Application submitted!');
-  // Normally here you'd gather form data and send to server
 });
 
-// Get the modal
-  //implement hashing through enctype after form is working
-  //consider business selling sites to inmates to get support from the community for their cause 
-  var modal = document.getElementById('id01');
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
-      }
-  }
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
