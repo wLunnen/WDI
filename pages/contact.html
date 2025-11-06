@@ -18,19 +18,19 @@
       <button data-tab="resume">Resume</button>
     </nav>
 
-    <form id="applicationForm">
+    <form action="../scripts/contact.php" id="applicationForm">
       <section id="essay" class="tab-content active">
         <label>1. What are your goals with software development?</label>
         <textarea name="goals" required></textarea>
         <label>2. How are our projects aligned with your goals?</label>
-        <textarea name="alignment" required></textarea>
+        <textarea name="message" required></textarea>
         <label>3. Anything you'd like us to know?</label>
         <textarea name="additional_info"></textarea>
       </section>
 
-      <section id="code" class="tab-content">
+      <section id="pseudo" class="tab-content">
       <label>Provide pseudocode for an easy project:</label>
-      <textarea name="pseudo_code" rows="8" placeholder="e.g. sorting function, basic math, your choice"></textarea>
+      <textarea name="code" rows="8" placeholder="e.g. sorting function, basic math, your choice"></textarea>
       <label>Your best attempt at implementation:</label>
       <textarea name="sample_code" rows="8" required></textarea>
       </section>
@@ -39,7 +39,7 @@
         <label>Name: <input type="text" name="name" required /></label>
         <label>Email: <input type="email" name="email" placeholder="email@email.com" required /></label>
         <label>Phone: <input type="tel" name="phone" placeholder="(xxx)-xxx-xxxx"/></label>
-        <label>Cover Letter: <input type="file" name="cover_letter" accept=".pdf,.docx" /></label>
+        <label>Cover Letter: <input type="file" name="cover" accept=".pdf,.docx" /></label>
         <label>Resume: <input type="file" name="resume" accept=".pdf,.docx" required /></label>
       </section>
       <button type="submit">Submit</button>
