@@ -15,36 +15,86 @@
   <link rel="stylesheet" href="styles/index.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-container {
+      position: relative;
+      width: 200px;
+    }
+
+    .menu-button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .menu-items {
+      display: none;
+      flex-direction: column;
+      background-color: #ecf0f1;
+      border: 1px solid #ccc;
+      margin-top: 5px;
+    }
+
+    .menu-items a {
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .menu-items a:hover {
+      background-color: #ddd;
+    }
+
+    .menu-container.open .menu-items {
+      display: flex;
+    }
+  </style>
+
 </head>
 
 <body>
 
   <!-- Header -->
   <header class="header">
-    <a href="https://www.upwork.com/freelancers/~01fdda4fe8d50ca363?mp_source=share">
-      <img src="https://i.postimg.cc/90C8RxWw/upwork-logo.webp" alt="Upwork">
-    </a>
-    <a href="https://www.linkedin.com/company/western-development-initiative/">
-      <img src="https://i.postimg.cc/C1Q5d2Cm/linkedin-icon.webp" alt="LinkedIn">
-    </a>
-    <a href="https://calendly.com/wesley-lunnen/consultation">
-      <img src="https://i.postimg.cc/wMR1grpb/calendly-logo.png" alt="Calendly">
-    </a>
-    <a href="https://www.fiverr.com/wlunnen/">
-      <img src="https://i.postimg.cc/CKqJ5bvX/fiverr-logo.webp" alt="Fiverr">
-    </a>
-    <a href="https://linktr.ee/quarter.puerto">
-      <img src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="Linktree">
-    </a>
-    <a href="https://www.patreon.com/WildWildW">
-      <img src="https://i.postimg.cc/jSMn6PZc/patreon-logo.png" alt="Patreon">
-    </a>
-    <a href="https://www.youtube.com/@wild_wild_wes">
-      <img src="https://i.postimg.cc/J0x21Qwt/YT-logo.png" alt="YouTube">
-    </a>
-    <a href="https://www.kickstarter.com/profile/215929639">
-      <img src="https://i.postimg.cc/HLY8Ms5R/kickstarter-logo.png" alt="KickStarter">
-    </a>
+
+    <div class="menu-container" id="menu">
+      <button class="menu-button" onclick="toggleMenu()">☰ Menu</button>
+        <div class="menu-items">
+          <a href="https://www.upwork.com/freelancers/~01fdda4fe8d50ca363?mp_source=share">
+            <img src="https://i.postimg.cc/90C8RxWw/upwork-logo.webp" alt="Upwork">
+          </a>
+          <a href="https://www.linkedin.com/company/western-development-initiative/">
+            <img src="https://i.postimg.cc/C1Q5d2Cm/linkedin-icon.webp" alt="LinkedIn">
+          </a>
+          <a href="https://calendly.com/wesley-lunnen/consultation">
+            <img src="https://i.postimg.cc/wMR1grpb/calendly-logo.png" alt="Calendly">
+          </a>
+          <a href="https://www.fiverr.com/wlunnen/">
+            <img src="https://i.postimg.cc/CKqJ5bvX/fiverr-logo.webp" alt="Fiverr">
+          </a>
+          <a href="https://linktr.ee/quarter.puerto">
+            <img src="https://i.postimg.cc/brFqmSVg/linktree-logo.webp" alt="Linktree">
+          </a>
+          <a href="https://www.patreon.com/WildWildW">
+            <img src="https://i.postimg.cc/jSMn6PZc/patreon-logo.png" alt="Patreon">
+          </a>
+          <a href="https://www.youtube.com/@wild_wild_wes">
+            <img src="https://i.postimg.cc/J0x21Qwt/YT-logo.png" alt="YouTube">
+          </a>
+          <a href="https://www.kickstarter.com/profile/215929639">
+            <img src="https://i.postimg.cc/HLY8Ms5R/kickstarter-logo.png" alt="KickStarter">
+          </a>
+        </div>
+    </div>
   </header>
 
 
@@ -260,6 +310,11 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts/index.js"></script>
+  <script>
+  function toggleMenu() {
+    document.getElementById('menu').classList.toggle('open');
+    }
+  </script>
 </body>
 
 </html>
