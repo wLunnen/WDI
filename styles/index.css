@@ -53,8 +53,8 @@ html, body {
 
 .flip-box {
   background-color: transparent;
-  width: 50%;
-  height: 50%;
+  width: 10%;
+  height: 10%;
   margin: 5rem 10rem 5rem 10rem; 
   transition: transform 0.3s ease;
 }
