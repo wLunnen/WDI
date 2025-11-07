@@ -38,9 +38,7 @@ html, body {
 }
 
 .container {
-  background: url('https://i.postimg.cc/dVR6CjGW/Black.png');
-  background-position: center;
-  background-repeat: no-repeat;
+  background: black;
   background-size: cover;
   margin: 1rem;
   display: flex;
