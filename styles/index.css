@@ -54,7 +54,7 @@ html, body {
   background-color: transparent;
   width: 20rem;
   height: 20rem;
-  /*margin: 5rem 10rem 5rem 10rem;*/ 
+  margin: auto; 
   transition: transform 0.3s ease;
 }
 
