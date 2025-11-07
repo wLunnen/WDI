@@ -201,9 +201,8 @@ textarea {
 .footer {
   position: fixed;
   bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 3%;
+  left: 0;
+  width: 100%;
   background: rgba(255, 255, 255, 0.95);
   display: flex;
   justify-content: flex-end;
