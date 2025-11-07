@@ -102,7 +102,7 @@ html, body {
   border-radius: 15px;
   overflow: auto; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  background: url('https://i.postimg.cc/8CCP8R48/bw-bg.png');
+  background: white;
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
