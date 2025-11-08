@@ -22,8 +22,7 @@ body {
 
 body {
   font-family: sans-serif;
-  background: url('https://i.postimg.cc/8CCP8R48/bw-bg.png');
-  overflow: hidden;
+  background: #800000;
   margin: 0;
   padding: 2rem;
   color: #333;
