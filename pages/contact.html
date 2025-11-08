@@ -19,6 +19,14 @@
     </nav>
 
     <form action="contact.php" method="post" id="applicationForm">
+      <section id="resume" class="tab-content">
+        <label>Name: <input type="text" name="name" required /></label>
+        <label>Email: <input type="email" name="email" placeholder="email@email.com" required /></label>
+        <label>Phone: <input type="tel" name="phone" placeholder="(xxx)-xxx-xxxx"/></label>
+        <label>Cover Letter: <input type="file" name="cover" accept=".pdf,.docx" /></label>
+        <label>Resume: <input type="file" name="resume" accept=".pdf,.docx" required /></label>
+      </section>
+      
       <section id="essay" class="tab-content active">
         <label>1. What are your goals with software development?</label>
         <textarea name="goals" required></textarea>
@@ -35,13 +43,6 @@
       <textarea name="sample_code" rows="8" required></textarea>
       </section>
 
-      <section id="resume" class="tab-content">
-        <label>Name: <input type="text" name="name" required /></label>
-        <label>Email: <input type="email" name="email" placeholder="email@email.com" required /></label>
-        <label>Phone: <input type="tel" name="phone" placeholder="(xxx)-xxx-xxxx"/></label>
-        <label>Cover Letter: <input type="file" name="cover" accept=".pdf,.docx" /></label>
-        <label>Resume: <input type="file" name="resume" accept=".pdf,.docx" required /></label>
-      </section>
       <button type="submit">Submit</button>
       <a href="https://calendly.com/wesley-lunnen" class="calendly-button">Schedule</a>
       
