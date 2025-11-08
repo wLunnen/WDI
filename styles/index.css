@@ -38,7 +38,7 @@ html, body {
 }
 
 .container {
-  background: url('https://i.postimg.cc/7Z6q25y2/Blue.png');
+  background: url('https://i.postimg.cc/7Z6q25y2/Blue.png') center center / cover;
   background-size: cover;
   margin: 1rem;
   display: flex;
